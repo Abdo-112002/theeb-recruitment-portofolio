@@ -19,41 +19,41 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-l from-primary/10 to-secondary/5 pt-20">
+      <section
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/heroBgImage.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              {/* <Badge className="bg-primary/10 text-primary border-primary/20">مرخص من منصة مساند الحكومية</Badge> */}
-              <h1 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[100vh] py-20">
+            <div className="space-y-6 z-10  p-6 rounded-2xl max-w-xl">
+              <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight text-balance">
                 مكتب ذيب للاستقدام
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
+              <p className="text-xl text-gray-200 leading-relaxed text-pretty">
                 من أفضل مكاتب الاستقدام بالمملكة العربية السعودية بمهارة عالية ودقة وسرعة
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
                   <Phone className="h-5 w-5 ml-2" />
-                  طلب استقدام الآن
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                  <MessageCircle className="h-5 w-5 ml-2" />
 
+                  <a href="tel:+966555908232">
+                    <span>  طلب استقدام الآن</span>
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent text-white border-white">
+                  <MessageCircle className="h-5 w-5 ml-2" />
                   <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
                     تواصل عبر واتساب
                   </a>
-
                 </Button>
               </div>
-            </div>
-            <div className="relative">
-              <img
-                src="/zeepBg.png"
-                alt="مكتب ذيب للاستقدام - خدمات استقدام العمالة المنزلية"
-              />
             </div>
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section className="py-16 bg-background">
@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/aboutImage.jpeg"
+                src="/chambermaid-hotel-room.jpg"
                 alt="من نحن - مكتب ذيب للاستقدام"
                 className="rounded-lg shadow-lg w-full"
               />

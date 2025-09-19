@@ -29,7 +29,7 @@ export function Header() {
       </div>
 
       {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
@@ -37,8 +37,8 @@ export function Header() {
               <Image
                 src={AppLogo}
                 alt="Logo"
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 className="object-contain"
               />
             </div>
