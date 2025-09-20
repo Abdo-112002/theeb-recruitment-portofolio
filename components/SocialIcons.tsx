@@ -98,7 +98,7 @@ const SocialIcons = () => {
                 href="https://wa.me/966555908232"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 p-4 rounded-full bg-[#25D366] hover:opacity-80 transition animate-pulse-scale"
+                className="fixed bottom-6 right-6 p-4 z-50 rounded-full bg-[#25D366] hover:opacity-80 transition animate-pulse-scale"
             >
                 {/* WhatsApp */}
                 <svg

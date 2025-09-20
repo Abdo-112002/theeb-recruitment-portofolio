@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "استقدام سريع",
     "خدمة عملاء مميزة",
   ],
-  authors: [{ name: "مكتب ذيب للاستقدام" }],
+  authors: [{ name: "مكتب ذيب للاستقدام - thee brecruitment" }],
   creator: "مكتب ذيب للاستقدام",
   publisher: "مكتب ذيب للاستقدام",
   formatDetection: {
@@ -35,13 +35,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  // metadataBase: new URL(""),
+  metadataBase: new URL("https://theebrecruitment.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://theebrecruitment.com/",
     languages: {
-      "ar-SA": "/",
+      "ar-SA": "https://theebrecruitment.com/",
     },
   },
+
   openGraph: {
     type: "website",
     locale: "ar_SA",
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     title: "مكتب ذيب للاستقدام - أفضل مكاتب استقدام العمالة المنزلية",
     description:
       "مكتب ذيب للاستقدام من أفضل مكاتب استقدام العمالة المنزلية بالمملكة العربية السعودية. خدمات استقدام احترافية وسريعة.",
-    siteName: "مكتب ذيب للاستقدام",
+    siteName: "مكتب ذيب للاستقدام - theeb recruitment",
     images: [
       {
         url: "/og-image.jpg",
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "مكتب ذيب للاستقدام - أفضل مكاتب استقدام العمالة المنزلية",
     description: "خدمات استقدام عمالة منزلية احترافية وسريعة من أفضل الدول",
-    images: ["/og-image.jpg"],
+    images: ["/assets/zeebLogo.png"],
   },
   robots: {
     index: true,
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
-  generator: 'v0.app'
+  generator: 'abdo ibrahim'
 }
 
 export default function RootLayout({

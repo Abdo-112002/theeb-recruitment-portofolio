@@ -16,7 +16,7 @@ export function Footer() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center">
                   <Image
                     src={AppLogo}
-                    alt="Logo"
+                    alt="مكتب ذيب للاستقدام - theebrecruitment"
                     width={60}
                     height={60}
                     className="object-contain"
@@ -173,6 +173,14 @@ export function Footer() {
                   </a>
                 </span>
               </div>
+
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <div className="text-muted-foreground space-y-1">
+                  <p>المبيعات: 0500928007 - 0501144651</p>
+                </div>
+              </div>
+
+
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-sm">theebalqahtani680@gmail.com</span>

@@ -49,7 +49,8 @@ const ServicesCounteries = () => {
                             <div className="w-full h-32 cursor-pointer relative hover:scale-105 transition-transform">
                                 <Image
                                     src={country.flagUrl}
-                                    alt={country.name}
+                                    loading='lazy'
+                                    alt="مكتب ذيب للاستقدام - theebrecruitment"
                                     fill
                                     className="object-cover"
                                 />

@@ -36,7 +36,7 @@ export function Header() {
             <div className="w-16 h-16 rounded-full flex items-center justify-center">
               <Image
                 src={AppLogo}
-                alt="Logo"
+                alt="مكتب ذيب للاستقدام - theebrecruitment"
                 width={60}
                 height={60}
                 className="object-contain"
