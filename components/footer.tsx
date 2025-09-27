@@ -34,7 +34,9 @@ export function Footer() {
                 <a
                   href="https://x.com/theeboffice1"
                   target="_blank"
-                       aria-label="تابعنا على تويتر"
+            
+                    aria-label="تابعنا على تويتر"
+                    title="تابعنا على تويتر"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -42,6 +44,7 @@ export function Footer() {
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
+                    aria-hidden="true"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -53,6 +56,7 @@ export function Footer() {
                   href="https://www.facebook.com/profile.php?id=61580388674335"
                   target="_blank"
                     aria-label="تابعنا على فيسبوك"
+                        title="تابعنا على فيسبوك"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -61,6 +65,7 @@ export function Footer() {
                     width="20"
                     height="20"
                     fill="currentColor"
+                    aria-hidden="true"
                     viewBox="0 0 24 24"
                   >
                     <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.987C18.343 21.128 22 16.991 22 12"></path>
@@ -71,6 +76,7 @@ export function Footer() {
                   href="https://www.instagram.com/theeb_recruitment/"
                   target="_blank"
                            aria-label="تابعنا على إنستجرام"
+                               title="تابعنا على إنستجرام"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -80,6 +86,7 @@ export function Footer() {
                     height="20"
                     fill="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm6.25-.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5ZM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"></path>
                   </svg>
@@ -89,6 +96,7 @@ export function Footer() {
                   href="https://www.tiktok.com/@theeb.alqahtani02"
                   target="_blank"
                   aria-label="تابعنا على تيك توك"
+                       title="تابعنا على تيك توك"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -98,6 +106,7 @@ export function Footer() {
                     height="20"
                     fill="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path d="M12.5 2h4.021a5.99 5.99 0 0 0 5.979 5.979v4.021a9.99 9.99 0 0 1-5.979-1.954v8.454A5.5 5.5 0 1 1 11 13.042V17.5a2.5 2.5 0 1 0 3 2.45V2Z"></path>
                   </svg>
