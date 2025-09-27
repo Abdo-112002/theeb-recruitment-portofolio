@@ -67,8 +67,8 @@ export function Header() {
           </div>
 
           {/* CTA Button */}
-          <Button className="hidden md:flex px-6 py-3 h-[48px] text-base rounded-md">
-            <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
+          <Button className="hidden md:flex h-auto text-base rounded-md">
+            <a href="https://wa.me/966555908232" className="block px-6 py-2" target="_blank" rel="noopener noreferrer">
               طلب استقدام
             </a>
           </Button>
@@ -79,6 +79,8 @@ export function Header() {
             size="sm"
             className="md:hidden bg-transparent cursor-pointer"
             onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
+            aria-labelledby="Open menu"
           >
             <Menu className="h-5 w-5" />
           </Button>
@@ -106,8 +108,8 @@ export function Header() {
             </nav>
 
             {/* CTA */}
-            <Button className="px-6 py-3 text-base rounded-md">
-              <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
+            <Button className="text-base h-auto p-0 rounded-md">
+              <a href="https://wa.me/966555908232" className="block w-full px-6 py-3" target="_blank" rel="noopener noreferrer">
                 طلب استقدام
               </a>
             </Button>

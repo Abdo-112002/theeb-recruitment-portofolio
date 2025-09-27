@@ -67,6 +67,7 @@ export default function HomePage() {
               <img
                 src="/chambermaid-hotel-room.webp"
                 alt="من نحن - مكتب ذيب القحطاني للاستقدام"
+                loading="lazy"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>

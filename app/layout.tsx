@@ -266,6 +266,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <link rel="canonical" href={BASE_URL + "/"} />
+        <link
+          rel="preload"
+          href="/heroBgImage.webp"
+          as="image"
+          fetchPriority="high"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body

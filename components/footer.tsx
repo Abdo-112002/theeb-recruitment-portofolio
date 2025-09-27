@@ -34,6 +34,7 @@ export function Footer() {
                 <a
                   href="https://x.com/theeboffice1"
                   target="_blank"
+                       aria-label="تابعنا على تويتر"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -51,6 +52,7 @@ export function Footer() {
                 <a
                   href="https://www.facebook.com/profile.php?id=61580388674335"
                   target="_blank"
+                    aria-label="تابعنا على فيسبوك"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -68,6 +70,7 @@ export function Footer() {
                 <a
                   href="https://www.instagram.com/theeb_recruitment/"
                   target="_blank"
+                           aria-label="تابعنا على إنستجرام"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
@@ -85,6 +88,7 @@ export function Footer() {
                 <a
                   href="https://www.tiktok.com/@theeb.alqahtani02"
                   target="_blank"
+                  aria-label="تابعنا على تيك توك"
                   rel="noopener noreferrer"
                   className="p-2 border rounded-full hover:bg-primary/10 transition"
                 >
