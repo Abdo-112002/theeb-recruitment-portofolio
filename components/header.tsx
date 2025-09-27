@@ -1,12 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Phone, Mail } from "lucide-react"
+import { Phone, Mail, X, Menu } from "lucide-react"
 import Image from "next/image"
-import AppLogo from "@/assets/AppLogo.png";
+import AppLogo from "@/assets/AppLogo.png"
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
       {/* Top contact bar */}
@@ -24,7 +27,6 @@ export function Header() {
               <span>theebalqahtani680@gmail.com</span>
             </div>
           </div>
-          {/* <div className="text-xs">مرخص من منصة مساند الحكومية</div> */}
         </div>
       </div>
 
@@ -39,7 +41,7 @@ export function Header() {
                 alt="مكتب ذيب للاستقدام - theebrecruitment"
                 width={60}
                 height={60}
-                className="object-contain"
+                className="object-contain w-[60px] h-[60px]"
               />
             </div>
             <div>
@@ -48,7 +50,7 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">
               الرئيسية
@@ -65,20 +67,53 @@ export function Header() {
           </div>
 
           {/* CTA Button */}
-          <Button className="hidden md:flex">
-
+          <Button className="hidden md:flex px-6 py-3 h-[48px] text-base rounded-md">
             <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
               طلب استقدام
             </a>
-
           </Button>
 
           {/* Mobile menu button */}
-          <Button variant="outline" size="sm" className="md:hidden bg-transparent">
-            القائمة
+          <Button
+            variant="outline"
+            size="sm"
+            className="md:hidden bg-transparent cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          >
+            <Menu className="h-5 w-5" />
           </Button>
         </div>
       </nav>
+
+      {/* Mobile Sidebar */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 bg-black/50 md:hidden" onClick={() => setIsOpen(false)}>
+          <div
+            className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg p-6 flex flex-col gap-6"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+          >
+            {/* Close button */}
+            <button className="self-end cursor-pointer" onClick={() => setIsOpen(false)}>
+              <X className="h-6 w-6" />
+            </button>
+
+            {/* Nav Links */}
+            <nav className="flex flex-col gap-4 text-lg font-medium">
+              <Link href="/" onClick={() => setIsOpen(false)}>الرئيسية</Link>
+              <Link href="/services" onClick={() => setIsOpen(false)}>خدماتنا</Link>
+              <Link href="/countries" onClick={() => setIsOpen(false)}>دول الاستقدام</Link>
+              <Link href="/contact" onClick={() => setIsOpen(false)}>اتصل بنا</Link>
+            </nav>
+
+            {/* CTA */}
+            <Button className="px-6 py-3 text-base rounded-md">
+              <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
+                طلب استقدام
+              </a>
+            </Button>
+          </div>
+        </div>
+      )}
     </header>
   )
 }

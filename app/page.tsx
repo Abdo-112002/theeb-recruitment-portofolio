@@ -10,7 +10,7 @@ import ServicesCounteries from "@/components/ServicesCounteries"
 export const metadata: Metadata = {
   title: "الرئيسية",
   description:
-    "مكتب ذيب للاستقدام - من أفضل مكاتب استقدام العمالة المنزلية بالمملكة العربية السعودية. نوفر خدمات استقدام احترافية وسريعة من الفلبين والهند وبنجلاديش وكينيا وأوغندا وإثيوبيا.",
+    "مكتب ذيب القحطاني للاستقدام - من أفضل مكاتب استقدام العمالة المنزلية بالمملكة العربية السعودية. نوفر خدمات استقدام احترافية وسريعة من الفلبين والهند وبنجلاديش وكينيا وأوغندا وإثيوبيا.",
 }
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/heroBgImage.jpg')" }}
+        style={{ backgroundImage: "url('/heroBgImage.webp')" }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
 
@@ -35,19 +35,23 @@ export default function HomePage() {
                 من أفضل مكاتب الاستقدام بالمملكة العربية السعودية بمهارة عالية ودقة وسرعة
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg px-8">
+                <Button className="text-lg px-8 py-3 h-full rounded-md">
                   <Phone className="h-5 w-5 ml-2" />
 
                   <a href="tel:+966555908232">
                     <span>  طلب استقدام الآن</span>
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent text-white border-white">
+                <a
+                  href="https://wa.me/966555908232"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 text-lg px-8 py-3 bg-transparent text-white border border-white rounded-lg hover:bg-white hover:text-black transition-colors"
+                >
                   <MessageCircle className="h-5 w-5 ml-2" />
-                  <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
-                    تواصل عبر واتساب
-                  </a>
-                </Button>
+                  تواصل عبر واتساب
+                </a>
+
               </div>
             </div>
           </div>
@@ -61,8 +65,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/chambermaid-hotel-room.jpg"
-                alt="من نحن - مكتب ذيب للاستقدام"
+                src="/chambermaid-hotel-room.webp"
+                alt="من نحن - مكتب ذيب القحطاني للاستقدام"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -74,7 +78,7 @@ export default function HomePage() {
                 الأنسب لعملائنا.
               </p>
               <p className="text-muted-foreground leading-relaxed text-pretty">
-                يعتبر مكتب ذيب للاستقدام من أفضل مكاتب استقدام العمالة المنزلية حاصل على ترخيص من منصة مساند
+                يعتبر مكتب ذيب القحطاني للاستقدام من أفضل مكاتب استقدام العمالة المنزلية حاصل على ترخيص من منصة مساند
                 الحكومية لتوفير خدمات استقدام عمالة منزلية بمعايير الجودة العالمية.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -214,7 +218,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold mb-4">تواصل معنا</h2>
           <p className="text-xl mb-8 opacity-90 text-pretty">نسعد بتواصلكم معنا، موظفونا جاهزون للرد على طلبكم</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
+            <Button size="lg" variant="secondary" className="text-lg px-8 h-auto">
               <Phone className="h-5 w-5 ml-2" />
 
               <a href="tel:+966555908232">
@@ -222,18 +226,16 @@ export default function HomePage() {
               </a>
 
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
+            <a
+              href="https://wa.me/966555908232"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 text-lg px-8 py-3 bg-transparent text-white border border-white rounded-lg hover:bg-white hover:text-black transition-colors"
             >
               <MessageCircle className="h-5 w-5 ml-2" />
+              تواصل عبر واتساب
+            </a>
 
-              <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
-                عبر تطبيق واتساب
-              </a>
-
-            </Button>
           </div>
           <div className="mt-10">
             <LocationSection />

@@ -9,7 +9,7 @@ import { LocationSection } from "@/components/LocationSection"
 export const metadata: Metadata = {
   title: "خدماتنا",
   description:
-    "تعرف على خدمات مكتب ذيب للاستقدام المتميزة. نقدم خدمات استقدام عمالة منزلية احترافية مع متابعة مستمرة وخدمة عملاء مميزة على مدار الساعة.",
+    "تعرف على خدمات مكتب ذيب القحطاني للاستقدام المتميزة. نقدم خدمات استقدام عمالة منزلية احترافية مع متابعة مستمرة وخدمة عملاء مميزة على مدار الساعة.",
 }
 
 export default function ServicesPage() {

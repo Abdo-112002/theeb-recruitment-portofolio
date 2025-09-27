@@ -5,32 +5,32 @@ const countries = [
     {
         name: "اثيوبيا",
         price: "3995",
-        flagUrl: "/Athiobia.png", // ضع لينك صورة العلم هنا
+        flagUrl: "/Athiobia.webp", // ضع لينك صورة العلم هنا
     },
     {
         name: "اوغندا",
         price: "4800",
-        flagUrl: "/Oganda.png",
+        flagUrl: "/Oganda.webp",
     },
     {
         name: "كينيا",
         price: "5395",
-        flagUrl: "/Kenia.png",
+        flagUrl: "/Kenia.webp",
     },
     {
         name: "بنجلاديش",
         price: "7595",
-        flagUrl: "/Bangladish.png",
+        flagUrl: "/Bangladish.webp",
     },
     {
         name: "سائق خاص الهند",
         price: "3000",
-        flagUrl: "/india.png",
+        flagUrl: "/india.webp",
     },
     {
         name: "الفلبين",
         price: "13595",
-        flagUrl: "/Philipenj.jpg",
+        flagUrl: "/Philipenj.webp",
     },
 ];
 
@@ -50,7 +50,7 @@ const ServicesCounteries = () => {
                                 <Image
                                     src={country.flagUrl}
                                     loading='lazy'
-                                    alt="مكتب ذيب للاستقدام - theebrecruitment"
+                                    alt="مكتب ذيب القحطاني للاستقدام - theebrecruitment"
                                     fill
                                     className="object-cover"
                                 />
@@ -61,9 +61,9 @@ const ServicesCounteries = () => {
                                 <h2 className="text-xl font-bold text-gray-800 text-right">
                                     {country.name}
                                 </h2>
-                                <p className="text-gray-700 text-base font-semibold">
+                                {/* <p className="text-gray-700 text-base font-semibold">
                                     {country.price} <span className="font-normal">﷼</span>
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                     ))}

@@ -175,7 +175,7 @@ export function Footer() {
               </div>
 
               <div className="flex items-center gap-3 text-muted-foreground">
-                <div className="text-muted-foreground space-y-1">
+                <div className="text-sm space-y-1">
                   <p>المبيعات: 0500928007 - 0501144651</p>
                 </div>
               </div>
@@ -185,18 +185,22 @@ export function Footer() {
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-sm">theebalqahtani680@gmail.com</span>
               </div>
-              <Button className="w-full mt-4" size="sm">
-                <MessageCircle className="h-4 w-4 ml-2" />
-                <a href="https://wa.me/966555908232" target="_blank" rel="noopener noreferrer">
-                  تواصل عبر واتساب
-                </a>
-              </Button>
+              <a
+                href="https://wa.me/966555908232"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 text-lg px-8 py-3 bg-primary text-white border border-white rounded-lg hover:bg-white hover:text-black transition-colors"
+              >
+                <MessageCircle className="h-5 w-5 ml-2" />
+                تواصل عبر واتساب
+              </a>
+
             </div>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
-          <p>© 2025 مكتب ذيب للاستقدام. جميع الحقوق محفوظة</p>
+          <p>© 2025 مكتب ذيب القحطاني للاستقدام. جميع الحقوق محفوظة</p>
         </div>
       </div>
     </footer>
