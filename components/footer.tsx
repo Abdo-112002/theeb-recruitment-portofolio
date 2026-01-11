@@ -189,7 +189,7 @@ export function Footer() {
 
               <div className="flex items-center gap-3 text-muted-foreground">
                 <div className="text-sm space-y-1">
-                  <p>المبيعات: 0500928007 - 0501144651</p>
+                  <p>المبيعات: 0500928007 - 0501144651 -  (966554189973+)</p>
                 </div>
               </div>
 

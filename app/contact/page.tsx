@@ -179,7 +179,7 @@ export default function ContactPage() {
                       <div>
                         <h4 className="font-medium text-foreground">أرقام التواصل</h4>
                         <div className="text-muted-foreground space-y-1">
-                          <p>المبيعات: 0500928007 - 0501144651</p>
+                          <p>المبيعات: 0500928007 - 0501144651 -  (966554189973+)</p>
                           <p>الشكاوي والاقتراحات: 0555908232 </p>
                         </div>
                       </div>
